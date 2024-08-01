@@ -1,0 +1,105 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(63,136,197);
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color:rgb(255,228,94);
+    text-transform: uppercase;
+    text-shadow: 0 0 rgb(0,0,0,0.3);
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:rgb(255,228,94);
+    text-transform: capitalize;
+    text-shadow: 0 0 rgb(0,0,0,0.3);
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.game-container{
+    display:grid;
+    grid-template-columns: 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px ;
+    width:340px;
+    background-color: rgb(255,204,213);
+    gap: 20px;
+    border:0;
+    margin: 10px;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.button{
+    background-color: rgb(255,99,146);
+    color:rgb(255,228,94);
+    border: 0;
+    border-radius: 10px;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.reset{
+    background-color: rgb(255,99,146);
+    color:rgb(255,228,94);
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width:100px;
+    height:50px;
+}
+
+@media(min-width:400px) and (max-width:500px){
+    .game-container{
+        width:280px;
+        grid-template-columns: 80px 80px 80px ;
+        grid-template-rows: 80px 80px 80px ;
+       
+    }
+    .button{
+        font-size: 50px;
+        font-weight: 800;
+    }
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:399px){
+    .game-container{
+        width:210px;
+        grid-template-columns: 60px 60px 60px ;
+        grid-template-rows: 60px 60px 60px ;
+        gap:15px;
+       
+    }
+    .button{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+
+
